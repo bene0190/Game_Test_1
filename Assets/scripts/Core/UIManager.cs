@@ -15,6 +15,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject panelMissionSelect;
     [SerializeField] private GameObject panelRoster;
     [SerializeField] private GameObject panelCombat;
+    [SerializeField] private GameObject creditPanel;
 
     private UIPanelState currentState;
 
@@ -36,4 +37,6 @@ private void Start() => ChangeState(UIPanelState.Hub);
     public void OpenMissionSelect() => ChangeState(UIPanelState.MissionSelect);
     public void OpenRoster() => ChangeState(UIPanelState.Roster);
     public void StartCombat() => ChangeState(UIPanelState.Combat);
+
+
 }
